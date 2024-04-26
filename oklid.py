@@ -6,17 +6,10 @@ def euclideanDistance(point1 , point2):
     return  sqrt(firstValue + secondValue) 
 
 
-points = []
+points = [(2, 3), (1, 7), (1, 1), (4, 6)]
 distances = []
 i = 1
 flag = 1
-while (flag != 0):
-    x = int(input(f"{i}. X kordinatını girin: "))
-    y = int(input(f"{i}. Y kordinatını girin: "))
-    flag = int(input("Bitirmek için 0 a basın: "))
-    i += 1
-    point = (x,y)
-    points.append(point)
 
 for i in range(len(points)):
     for j in range(i+1, len(points)):
